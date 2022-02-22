@@ -59,6 +59,7 @@ class Director(Score):
         max_y = self._video_service.get_height()
         robot.move_next(max_x, max_y)
         
+     
         for index, artifact in enumerate(artifacts):
             artifact.move_next(max_x, max_y)
             if robot.get_position().equals(artifact.get_position()):
