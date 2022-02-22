@@ -1,5 +1,21 @@
 class Score:
 
+    """ Keeps track for the value score and updating  and showing 
+        
+        attributes:
+
+        Score: Set the value how the game start
+        Substract:  every time hits a rock substract 50 points
+        add: Evry time hits a gems add 50 points
+
+        Methods:
+           update_points
+           show_score
+
+
+            """ 
+
+
     def __init__(self):
         self.__score = 600
         self.__substract = 50
