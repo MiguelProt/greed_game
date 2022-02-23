@@ -1,4 +1,4 @@
-import os
+
 import random
 
 from game.casting.actor import Actor
@@ -22,7 +22,6 @@ FONT_SIZE = 25
 COLS = 40
 ROWS = 32
 CAPTION = "Greed Game!"
-#DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt"
 WHITE = Color(255, 255, 255)
 DEFAULT_ARTIFACTS = 40
 
@@ -54,10 +53,7 @@ def main():
     cast.add_actor("robots", robot)
     
     # create the artifacts
-    """with open(DATA_PATH) as file:
-        data = file.read()
-        messages = data.splitlines()"""
-
+    
     for n in range(DEFAULT_ARTIFACTS):
         text = random.choice(['o', '*'])
         #(if False, if True), Condition
